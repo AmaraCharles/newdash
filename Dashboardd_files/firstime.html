@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input class="" id="name" type="name" placeholder="insert name"/>
+        <input class=""id="pass" type="password" placeholder="input password"/>
+        <button onclick="compare()">Login</button>
+    </form>
+    <script>
+        var kitchen={
+            username:"kitchenette",
+            password:"cook"
+        }
+
+        var laundry={
+            username:"Clean",
+            password:"wishy"
+        }
+
+
+        var  name=document.getElementById('name')
+var pass=document.getElementById('pass')
+
+var passcheck=pass.value;
+var namecheck=name.value;
+function compare(e){
+    event.preventDefault()
+if (passcheck==kitchen.password && namecheck==kitchen.password){
+
+location.href="kitchen.html"
+
+}
+
+else (location.href="laundry.html")
+    
+
+
+}
+    </script>
+</body>
+</html>

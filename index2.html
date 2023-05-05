@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)./Dashboardd.html -->
+<html lang="zxx" class="js" style="height: 100%;"><head>
+    <base href="#">
+    <meta charset="utf-8">
+    <meta name="author" content="Mide Coder">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Fav Icon  -->
+    <meta name="title" Content="CopyExpTrade - Dashboard">
+    <meta name="description" content="CopyExpTrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta name="keywords" content="copy,copytrading,stock,forex,options,pips">
+    <link rel="shortcut icon" href="https://copyexptrade.com/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="https://copyexptrade.com/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CopyExpTrade - Dashboard">
+    
+    <meta itemprop="name" content="CopyExpTrade - Dashboard">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://copyexptrade.com/assets/images/seo/62e1644a6eaf71658938442.jpeg">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CopyExpTrade  - Smart Trading Platform">
+    <meta property="og:description" content="CopyExpTrade is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
+    <meta property="og:image" content="https://copyexptrade.com/assets/images/seo/62e1644a6eaf71658938442.jpeg"/>
+    <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:url" content="https://copyexptrade.com/user/dashboard">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Capitalclime - Dashboard</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/dashlite.php?ver=3.0.3">
+    <link id="skin-default" rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/theme.css?ver=3.0.3">
+     
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/libs/fontawesome-icons.css?ver=3.0.3">
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/libs/themify-icons.css?ver=3.0.3">
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/libs/bootstrap-icons.css?ver=3.0.3">
+
+        <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/css/color.php?color=b41953&amp;secondColor=ec614a">
+ 
+        <!-- StyleSheets  -->
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/vest.css?ver=3.0.3">
+    <link rel="stylesheet" href="https://copyexptrade.com/assets/templates/basic/assets/css/vest2.css">
+   
+
+  
+       <style>
+      .spinner-border {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+      }
+    .markets-container {
+    background: #101114;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid #1ee0ac;
+  background-color: #1ee0ac;
+  border-radius: 100%;
+}
+@keyframes  blinker {
+  50% {
+    opacity: 0.3;
+  }
+}
+.markets-container {
+    position: relative;
+    overflow: hidden;
+    height: 159px;
+    background-image: linear-gradient( 135deg, #101114 10%, #1f2430 100%);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0 2px 16px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 2px 16px 0 rgb(0 0 0 / 4%);
+    border-radius: 11px;
+    margin-bottom: 20px;
+}
+#dark .markets-content h2, #dark .markets-content p {
+    color: #ffffff;
+}
+.markets-content h2 {
+    font-size: 14px;
+    top: 14px;
+    position: absolute;
+    left: 15px;
+    color: #4a4a4a;
+}
+#dark .markets-content h2, #dark .markets-content p {
+    color: #ffffff;
+}
+
+.markets-content p {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    font-size: 16px;
+}
+.markets-content span.green, #dark .markets-content span.red {
+    color: #fff;
+}
+
+.markets-content span.green, .markets-content span.red {
+    position: absolute;
+    right: 0;
+    background: #cc9b0a;
+    color: #fff;
+    top: 15px;
+    padding: 3px 12px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-weight: 600;
+}
+
+.markets-content span.red {
+    position: absolute;
+    right: 0;
+    background: #1FBB35;
+    color: #fff;
+    top: 15px;
+    padding: 3px 12px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-weight: 600;
+}
+
+
+.markets-content span.green2 {
+    color: #fff;
+}
+
+.markets-content span.green2 {
+    position: absolute;
+    right: 0;
+    background: #101114;
+    color: #fff;
+    top: 15px;
+    padding: 3px 12px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-weight: 600;
+}
+
+.markets-chart {
+    position: absolute;
+    top: 40px;
+    width: 500px;
+    left: 0;
+}
+.markets-chart > div {
+    width: 110%;
+    margin-left: -16px;
+}
+        @media (min-width: 1200px) {
+            .nk-apps-sidebar {
+                display:none;
+            }
+            .has-apps-sidebar .nk-sidebar {
+    left: 0px;
+}
+.nk-apps-sidebar + .nk-main > .nk-wrap > .nk-header-fixed {
+    left: 0px;
+}
+.nk-apps-sidebar + .nk-main {
+    padding-left: 0px;
+}
+        }
+    </style>
+</head>
+<body class="nk-body npc-default has-apps-sidebar has-sidebar dark-mode no-touch nk-nio-theme" style="padding-right: 0px; position: relative; min-height: 100%; top: 0px;">
+    <div class="nk-app-root">
+        <div class="nk-apps-sidebar is-dark">
+            <div class="nk-apps-brand">
+                <a href="./Dashboardd.html" class="logo-link">
+                    <img class="logo-light logo-img" src="./Dashboardd_files/logo.png" srcset="https://copyexptrade.com/assets/images/logoIcon/logo.png 2x" alt="logo">
+                    <img class="logo-dark logo-img" src="./Dashboardd_files/logo.png" srcset="https://copyexptrade.com/assets/images/logoIcon/logo.png 2x" alt="logo-dark">
+                </a>
+            </div>
+            <div class="nk-sidebar-element">
+                <div class="nk-sidebar-body">
+                    <div class="nk-sidebar-content" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
+                        <div class="nk-sidebar-menu">
+                            <!-- Menu -->
+                            <ul class="nk-menu apps-menu">
+                                <li class="nk-menu-item active current-page">
+                                    <a href="./Dashboardd.html" class="nk-menu-link" title="" data-bs-original-title="Dashboard">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-template"></em></span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-hr"></li>
+                                <li class="nk-menu-item">
+                                    <a href="./Deposit.html" class="nk-menu-link" title="" data-bs-original-title="Deposit">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-wallet"></em></span>
+                                    </a>
+                                </li>
+                                                                                                <li class="nk-menu-item">
+                                    <a href="https://copyexptrade.com/user/robotics" class="nk-menu-link" title="" data-bs-original-title="Robotics">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-android"></em></span>
+                                    </a>
+                                </li>
+                                                                <li class="nk-menu-hr"></li>
+                                <li class="nk-menu-item">
+                                    <a href="https://copyexptrade.com/user/suport/create" class="nk-menu-link" title="" data-bs-original-title="Support">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-headphone"></em></span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="./Account-Verification.html" class="nk-menu-link" title="" data-bs-original-title="Google 2FA">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-qr"></em></span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="./Account-Verification.html" class="nk-menu-link" title="" data-bs-original-title="KYC">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-folder"></em></span>
+                                    </a>
+                                </li> 
+                                <li class="nk-menu-item">
+                                    <a href="./login-sessions.html" class="nk-menu-link" title="" data-bs-original-title="Login Events">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-calendar"></em></span>
+                                    </a>
+                                </li>
+                                
+                                <li class="nk-menu-hr"></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="nk-sidebar-footer">
+                            <ul class="nk-menu nk-menu-md">
+                                <li class="nk-menu-item">
+                                    <a href="../index.html" class="nk-menu-link" title="" data-bs-original-title="Logout">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-power"></em></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+
+                    <div class="nk-sidebar-profile nk-sidebar-profile-fixed dropdown">
+                        <a href="./Dashboardd.html" class="toggle" data-target="profileDD">
+                            <div class="user-avatar">
+                                <span>
+                                <img src="./Dashboardd_files/350x300" id="account-upload-img" class="rounded me-50" alt="profile image" height="40" width="40">
+                                </span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-md m-1 nk-sidebar-profile-dropdown" data-content="profileDD">
+                            <div class="dropdown-inner user-card-wrap d-none d-md-block">
+                                <div class="user-card">
+                                    <div class="user-avatar">
+                                        <span>G C</span>
+                                    </div>
+                                    <div class="user-info">
+                                        <span class="lead-text">Greg Connor</span>
+                                        <span class="sub-text text-soft">falsepegasus@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-inner">
+                                <ul class="link-list">
+                                    <li><a href="./Profile-Setting.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                    <li><a href="./security-settings.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="dropdown-inner">
+                                <ul class="link-list">
+                                    <li><a href="../index.html"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main @s  -->
+        <div class="nk-main ">
+            <!-- wrap @s  -->
+            <div class="nk-wrap ">
+                <!-- main header @s  -->
+                <div class="nk-header nk-header-fixed is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ms-n1">
+                                <a href="" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-app-name">
+                              
+                                <div class="nk-header-app-info">
+                                    <span class=""> <img class=" logo-img" src="./Dashboardd_files/logo.png"></span>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <div class="nk-header-menu is-light">
+                                <div class="nk-header-menu-inner">
+                                    <!-- Menu -->
+                                    <ul class="nk-menu nk-menu-main">
+                                        <li class="nk-menu-item">
+                                           
+                                        </li>
+                                    </ul>
+                                    <!-- Menu -->
+ 
+                                </div>
+                            </div>
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    
+                                    <li class="dropdown chats-dropdown hide-mb-sm">
+                                        <a href="./Dashboardd.html" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="icon-status icon-status-na"><em class="icon ni ni-comments"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end" style="">
+                                            <div class="dropdown-body">
+                                                <ul class="chat-list">
+                                                                                                </ul><!-- .chat-list -->
+                                            </div><!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="https://copyexptrade.com/user/suport/request">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="./Dashboardd.html" class="dropdown-toggle nk-quick-nav-icon show" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end show" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 38px);" data-popper-placement="bottom-end">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Alerts</span>
+                                                <a href="./Dashboardd.html">Last 5 Notifications</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                                                        </div><!-- .nk-dropdown-body -->
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="dropdown list-apps-dropdown d-lg-none">
+                                        <a href="./Dashboardd.html" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                                            <div class="icon-status icon-status-na"><em class="icon ni ni-menu-circled"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                                            <div class="dropdown-body">
+                                                <ul class="list-apps">
+                                                    <li>
+                                                  
+                                                        <a href="dashboardd.html">
+                                                           <span class="list-apps-media"><em class="icon ni ni-dashboard bg-primary-dim"></em></span>
+                                                            <span class="list-apps-title">Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    
+                                                    <li>
+                                                  
+                                                        <a href="Deposit.html">
+                                                            <span class="list-apps-media"><em class="icon ni ni-wallet bg-primary-dim"></em></span>
+                                                            <span class="list-apps-title">Deposit</span>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    
+                                                    <li>
+                                                        <a href="Withdraw-Fund.html">
+                                                            <span class="list-apps-media"><em class="icon ni ni-cart bg-primary-dim"></em></span>
+                                                            <span class="list-apps-title">Withdraw</span>
+                                                        </a>
+                                                    </li>
+                                          <li>
+                                       
+                                
+                                <a href="./Transaction-Log.html">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-growth-fill bg-primary-dim"></em></span>
+                                                            <span class="list-apps-title">Trading</span>
+                                                        </a>
+                                                    </li>          
+                                                    
+                                                    <li>
+                                                        <a href="./Account-Verification.html">
+                                                            <span class="list-apps-media"><em class="icon ni ni-folder bg-primary-dim"></em></span>
+                                                            <span class="list-apps-title">KYC Manager</span>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                                 
+                                            </div><!-- .nk-dropdown-body -->
+                                        </div>
+                                    </li>
+                                    <li style="display:none" class="verify"><a href="../index.html"><em class="icon ni ni-signout"></em><span>Logout</span></a></li>
+                                    
+                                    
+                                    <li class="dropdown language-dropdown d-sm-block me-n1">
+                                        <a href="./Dashboardd.html" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                                            
+                                               EN
+                                            
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-s1">
+                                            <ul class="language-list">
+                                            
+                                             <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|en&#39;);return false;" title="English">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/GB.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">English</span>
+                </a>
+            </li>
+            
+            
+                                            <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ru&#39;);return false;" title="Русский">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/RU.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Русский</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|pt&#39;);return false;" title="Português">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/PT.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Português</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|es&#39;);return false;" title="Spanish">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/ES.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Español</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|it&#39;);return false;" title="Italiano">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/IT.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Italiano</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|pl&#39;);return false;" title="Polski">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/PL.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Polski</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|id&#39;);return false;" title="Indonesian">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/ID.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Indonesian</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|fr&#39;);return false;" title="Français">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/FR.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Français</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|th&#39;);return false;" title="Thai">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/TH.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Thai</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|de&#39;);return false;" title="Deutsch">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/DE.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Deutsch</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|vi&#39;);return false;" title="Tiếng Việt">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/VN.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Tiếng Việt</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ar&#39;);return false;" title="العر">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/AE.png" alt="">
+                    </span>
+                    <span class="languages__lang-name"> العربية</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ms&#39;);return false;" title="Malay">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/MY.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Malay</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|cn&#39;);return false;" title="中文">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/CN.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">中文</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|tr&#39;);return false;" title="Türkçe">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/TR.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Türkçe</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ja&#39;);return false;" title="日本語">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/JP.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">日本語</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ko&#39;);return false;" title="한국어">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/KR.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">한국어</span>
+                </a>
+            </li>
+                               
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|sr&#39;);return false;" title="Српски">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/RS.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Српски</span>
+                </a>
+            </li>
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|ro&#39;);return false;" title="Română">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/RO.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">Română</span>
+                </a>
+            </li>
+                             
+                                <li class="languages__item">
+                <a class="languages__link" href="./Dashboardd.html" onclick="doGTranslate(&#39;en|in&#39;);return false;" title="हिन्दी">
+                    <span class="languages__flag">
+                        <img src="./Dashboardd_files/IN.png" alt="">
+                    </span>
+                    <span class="languages__lang-name">हिन्दी</span>
+                </a>
+            </li>
+
+                                           
+                                               
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    <div id="google_translate_element2"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="as">Assamese</option><option value="ay">Aymara</option><option value="az">Azerbaijani</option><option value="bm">Bambara</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bho">Bhojpuri</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="my">Burmese</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="dv">Dhivehi</option><option value="doi">Dogri</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="ee">Ewe</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gn">Guarani</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesian</option><option value="ga">Irish Gaelic</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="gom">Konkani</option><option value="ko">Korean</option><option value="kri">Krio</option><option value="ku">Kurdish (Kurmanji)</option><option value="ckb">Kurdish (Sorani)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="ln">Lingala</option><option value="lt">Lithuanian</option><option value="lg">Luganda</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mai">Maithili</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mni-Mtei">Meiteilon (Manipuri)</option><option value="lus">Mizo</option><option value="mn">Mongolian</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="or">Odia (Oriya)</option><option value="om">Oromo</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="qu">Quechua</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="sa">Sanskrit</option><option value="gd">Scots Gaelic</option><option value="nso">Sepedi</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="th">Thai</option><option value="ti">Tigrinya</option><option value="ts">Tsonga</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="ak">Twi</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com/" target="_blank"><img src="./Dashboardd_files/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div>
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: true}, 'google_translate_element2');}
+</script><script type="text/javascript" src="./Dashboardd_files/element.js.download"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+<style type="text/css">
+.translate {background-color: coral;}
+a.gflag {vertical-align:middle;font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url(http://gtranslate.net/flags/16.png);}
+a.gflag img {border:0;}
+a.gflag:hover {background-image:url(http://gtranslate.net/flags/16a.png);}
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+.goog-te-menu-value:hover {text-decoration:none !important;}
+body {top:0 !important;}
+#google_translate_element2 {display:none!important;}
+</style><!-- .dropdown -->
+                                    <li class="dropdown user-dropdown">
+                                        <a href="./Dashboardd.html" class="dropdown-toggle me-n1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-end" style="">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>G C</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Greg Connor</span>
+                                                        <span class="sub-text">falsepegasus@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="./Profile-Setting.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                                    <li><a href="./security-settings.html"><em class="icon ni ni-setting-alt"></em><span>Password Setting</span></a></li>
+                                                    <li><a href="https://copyexptrade.com/user/referral-setting"><em class="icon ni ni-activity-alt"></em><span>Referral Activity</span></a></li>
+                                                    
+                                                      <li><a href="./login-sessions.html"><em class="icon ni ni-calendar"></em><span>Login Session</span></a></li>
+                                                    
+                                                    
+                                                    
+                                                   
+                                                    <li><a class="dark-switch active" href="./Dashboardd.html"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="../index.html"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header @e  -->
+                <div class="nk-sidebar" data-content="sidebarMenu">
+                    <div class="nk-sidebar-inner" data-simplebar="init"><div class="simplebar-wrapper" style="margin: -24px -28px -32px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 24px 28px 32px;">
+                        <ul class="nk-menu nk-menu-md">
+                            
+                            <li class="nk-menu-item active current-page">
+                                <a href="dashboardd.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                    <span class="nk-menu-text">Account Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="Transaction-Log.html" class="nk-menu-link " data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-printer"></em></span>
+                                    <span class="nk-menu-text">Transactions</span>
+                                </a> 
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item">
+                                <a href="./Account-Verification.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-shield-check"></em></span>
+                                    <span class="nk-menu-text">KYC Verification</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+
+                        <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle" data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-wallet"></em></span>
+                                    <span class="nk-menu-text">Account Settings</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="./Profile-Setting.html" class="nk-menu-link" data-bs-original-title="" title=""><span class="nk-menu-text">Profile Settings</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="./security-settings.html" class="nk-menu-link" data-bs-original-title="" title=""><span class="nk-menu-text">Security Settings</span></a>
+                                    </li>
+                                   
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-heading">
+                                <h6 class="overline-title text-primary">Finance Manager</h6>
+                            </li><!-- .nk-menu-heading -->
+                           <li class="nk-menu-item">
+                                <a href="./Deposit.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                   <span class="nk-menu-icon"><em class="icon ni ni-wallet"></em></span>
+                                    <span class="nk-menu-text">Deposit</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item">
+                                <a href="./Withdraw-Fund.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                   <span class="nk-menu-icon"><em class="icon ni ni-cart"></em></span>
+                                    <span class="nk-menu-text">Withdraw</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            
+                            
+                            
+                            <li class="nk-menu-heading">
+                                <h6 class="overline-title text-primary">Trade Manager</h6>
+                            </li><!-- .nk-menu-heading -->
+                        
+                        <li class="nk-menu-item">
+                                <a href="./watch-trade.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                   <span class="nk-menu-icon"><em class="icon ni ni-wifi"></em></span>
+                                    <span class="nk-menu-text">Watch Live Trade </span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            
+                              <li class="nk-menu-item">
+                                <a href="./Transaction-Log.html" class="nk-menu-link" data-bs-original-title="" title="">
+                                   <span class="nk-menu-icon"><em class="icon ni ni-growth-fill"></em></span>
+                                    <span class="nk-menu-text">Stock Trade </span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+
+
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="./technical-indicator.html" class="nk-menu-link " data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-meter"></em></span>
+                                    <span class="nk-menu-text">Technical Indicators</span>
+                                </a>
+                                 
+                            </li><!-- .nk-menu-item -->
+                            <!-- .nk-menu-item -->
+                           
+                     
+                           
+                            <li class="nk-menu-heading">
+                                <h6 class="overline-title text-primary">Reports</h6>
+                            </li><!-- .nk-menu-heading -->
+                            <li class="nk-menu-item has-sub">
+                               
+                                 
+                            </li>
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="./login-sessions.html" class="nk-menu-link " data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-calendar"></em></span>
+                                    <span class="nk-menu-text">Login Session</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="../index.html" class="nk-menu-link " data-bs-original-title="" title="">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-power"></em></span>
+                                    <span class="nk-menu-text">Logout Session</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                        </ul><!-- .nk-menu -->
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 652px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 438px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+                </div>
+                <!-- content @s  -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                
+                
+               
+                                                    <ul class="breadcrumb breadcrumb-arrow" style="justify-content: flex-end;">   
+                                                    
+            <a href="./Deposit.html" class="hide lol"> <span class="badge badge-sm badge-dim bg-outline-warning  d-md-inline-flex">
+              <h6 style="color: #cc9b0a;">MAKE DEPOSIT</h6></span></a>   &nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    
+                    
+                                    
+                    
+      <span class="badge badge-sm badge-dim bg-outline-success  d-md-inline-flex">
+                    <h6>Status :</h6> &nbsp;<h6 style="color: #1ee0ac;"> On Standby</h6>&nbsp;<span class="blink_me"></span></span>           
+                    
+                                    </ul>
+               
+                    
+                    
+                    
+                                <div class="bread card card-bordered card-preview">
+                                            <div class="card-inner">
+                                                <nav>
+                                                    <ul class="breadcrumb breadcrumb-arrow">
+                                                          <!-- TradingView Widget BEGIN -->
+   <div class="tradingview-widget-container" style="width: 100%; height: 46px;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="./Dashboardd_files/saved_resource.html" style="box-sizing: border-box; display: block; height: 46px; width: 100%;"></iframe>
+   
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+<!-- TradingView Widget END -->
+                                                    </ul>
+                                                </nav>
+                                                
+                                            </div>
+                                        </div><!-- .card-preview -->
+                                        <br>
+
+
+    
+
+
+ 
+<!-- .nk-block-head -->
+<div class="nk-block">
+                                    <div class="row g-4">
+
+                                     
+
+
+                                        <div class="col-lg-9">
+                                            <div class="card card-bordered h-100">
+
+                                          
+                                                <div class="card-inner">
+                                                    
+                                                    <div class="nk-order-ovwg">
+                                                        <div class="row col-sm-12">
+                                             
+                                             
+                                             
+                                   
+     <!---   <div class="col-sm-4">
+             <div class="markets-container">
+            <div class="markets-content">
+              <h2>Balance BTC Value</h2>
+              <p>0 <small class="currenct currency-usd">₿</small></p>
+              <span class="green">BTC</span>
+            </div>
+            <div class="markets-chart">
+              <div id="marketsChartBtcDark"></div>
+            </div>
+          </div>
+        </div>-->
+        
+        
+        
+         <div class="col-sm-4">
+             <div class="markets-container">
+            <div class="markets-content">
+              <h2 style="color: #fff;">Total Deposit</h2>
+              <p class="weight-400 font-90"><b><small class="currenct currency-usd">$</small>0.00</b><br><br></p>
+              </div>
+               <div class="markets-content">
+                <h2 style="margin-top: 70px; color: #fff;">Total Withdrawal</h2>
+              <p style="margin-top: 70px;" class="weight-400 font-90"><b><small class="currenct currency-usd">$</small>0.00</b> </p>
+              
+            
+           
+    </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-sm-4">
+             <div class="markets-container">
+            <div class="markets-content">
+              <h2>Total Balance</h2>
+              <p class="weight-400 font-90"><b><small class="currenct currency-usd">$</small>0.00</b>
+              <br><br><br>
+              
+              <a href="" class="btn" style="    background-color: #282a30;
+    color: #fff;">View Transactions</a>
+              </p>
+              <span class="green2">USD</span>
+            
+           
+    </div>
+          </div>
+        </div>
+        
+      
+                <div class="col-sm-4 ">
+                                 
+        <div class="markets-container" style="background-image: url(https://swiftxasset.com/12345.jpg); background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="markets-content">
+              <h2> ROI Profits </h2> 
+                <p> <small class="currenct currency-usd">$</small>0.00 
+                
+                <br><br><br>
+                <a href="./Transaction-Log.html" class="btn" style="    background-color: #282a30;
+    color: #fff;">View Trades</a> </p>
+                
+               
+                
+              <span class="red">USD</span>
+            </div>
+            
+          </div>
+          </div> 
+
+  <script src="./Dashboardd_files/jquery-3.4.1.min.js.download"></script>
+  
+  <script src="./Dashboardd_files/amcharts-core.min.js.download"></script>
+  <script src="./Dashboardd_files/amcharts.min.js.download"></script>
+  <script src="./Dashboardd_files/custom.js.download"></script>
+
+	 
+        
+        
+
+                                                                    
+                                                        <!--             <div class="col-sm-4 ">
+                                <div class="gradient-style3 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-400 font-20">Ethereum/Token Balance</div>
+                                            <div class="weight-300 font-20">0.0000000<small>ETH</small></div>
+                                        </div>
+                                        <div class="widget-icon">
+                                            <div class="icon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gradient-style3 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-400 font-20">Bot Profit Wallet</div>
+                                            <div class="weight-300 font-20"><small class="currenct currency-usd">$</small>0.00</div>
+                                        </div>
+                                        <div class="widget-icon">
+                                            <div class="icon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                --->
+                            
+                     
+
+                                                                     
+ <!-- .col -->
+ 
+                                                        </div>
+                                                        
+                                                        
+                                                    </div><!-- .nk-order-ovwg -->
+            <br><br> 
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 500px;">
+                                <iframe scrolling="no" allowtransparency="true" frameborder="0" src="./Dashboardd_files/saved_resource(1).html" style="box-sizing: border-box; height: calc(468px); width: 100%;"></iframe>
+                                
+                            <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin  sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #fff !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+<!-- TradingView Widget END -->
+
+                                          
+                                                </div><!-- .card-inner -->
+                                                
+                                            </div><!-- .card -->
+                                            
+                                            
+                                        </div><!-- .col -->
+                                        <div class="col-lg-3">
+                                            <div class="card card-bordered h-100">
+                                                <div class=" card-inner-group">
+                                                    <div class="card-inner card-inner-md">
+                                                     
+                                                        <div class="nk-order-ovwg">
+                                                        <div class="">
+                                                      <!-- .nk-order-ovwg -->
+
+                                                                <div class="row g-4">
+                                                                    
+                                                                    
+                            <!---        <div class="col-6">
+                                <a href ="https://copyexptrade.com/user/feature-trade/trade"><div style="padding: 9px 20px; background-image: linear-gradient( 135deg, #22c037 10%, #064f1b 100%);" class=" text-white box-shadow border-radius-10 height-100-p ">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-600 font-15">Live Trade</div>
+                                        </div>
+                                       
+                                    </div>
+                                </div></a>
+                            </div>---->
+                            
+                            
+                            
+                            
+                            
+                            
+                                                     
+                                            <div class="card card-bordered h-100">
+                                                <div class="card-inner mb-n2">
+                                                    <div class="card-title-group">
+                                                        <div class="card-title card-title-sm">
+                                                            <h6 class="title">Login Activities</h6>
+                                                        </div>
+                                                         
+                                                    </div>
+                                                </div>
+                                                <div class="nk-tb-list is-compact">
+                                                    
+                                                    <div class="card-inner">
+                                                    <div class="timeline">
+                                                         <ul class="timeline-list">
+                                                                                                                    <li class="timeline-item">
+                                                                <div class="timeline-status bg-primary "></div>
+                                                                <div class="timeline-date">Apr-28 <em class="icon ni ni-alarm-alt"></em></div>
+                                                                <div class="timeline-data">
+                                                                    <h6 class="timeline-title">Chrome Windows 10</h6>
+                                                                    <div class="timeline-des">
+                                                                        <p>197.210.55.118</p>
+                                                                        <span class="time">1 second ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                                                                    <li class="timeline-item">
+                                                                <div class="timeline-status bg-primary "></div>
+                                                                <div class="timeline-date">Apr-28 <em class="icon ni ni-alarm-alt"></em></div>
+                                                                <div class="timeline-data">
+                                                                    <h6 class="timeline-title">Chrome Windows 10</h6>
+                                                                    <div class="timeline-des">
+                                                                        <p>197.210.54.131</p>
+                                                                        <span class="time">1 minute ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                                                                    <li class="timeline-item">
+                                                                <div class="timeline-status bg-primary "></div>
+                                                                <div class="timeline-date">Apr-28 <em class="icon ni ni-alarm-alt"></em></div>
+                                                                <div class="timeline-data">
+                                                                    <h6 class="timeline-title">Chrome Windows 10</h6>
+                                                                    <div class="timeline-des">
+                                                                        <p>197.210.54.131</p>
+                                                                        <span class="time">46 minutes ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                                                                    <li class="timeline-item">
+                                                                <div class="timeline-status bg-primary "></div>
+                                                                <div class="timeline-date">Apr-25 <em class="icon ni ni-alarm-alt"></em></div>
+                                                                <div class="timeline-data">
+                                                                    <h6 class="timeline-title">Handheld Browser Android</h6>
+                                                                    <div class="timeline-des">
+                                                                        <p>197.210.227.119</p>
+                                                                        <span class="time">2 days ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                                                                    <li class="timeline-item">
+                                                                <div class="timeline-status bg-primary "></div>
+                                                                <div class="timeline-date">Apr-21 <em class="icon ni ni-alarm-alt"></em></div>
+                                                                <div class="timeline-data">
+                                                                    <h6 class="timeline-title">Handheld Browser Android</h6>
+                                                                    <div class="timeline-des">
+                                                                        <p>197.210.227.40</p>
+                                                                        <span class="time">6 days ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                                                                                </ul>
+                                                    </div>
+                                                </div>
+                                       
+                                                    
+                                                </div><!-- .nk-tb-list -->
+                                                 <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="width: 100%; height: 400px;">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" src="./Dashboardd_files/saved_resource(2).html" style="box-sizing: border-box; display: block; height: 400px; width: 100%;"></iframe>
+  
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #9db2bd !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+<!-- TradingView Widget END -->    
+                                            </div><!-- .card -->
+                                            
+                                            
+                      <!--      <div class="col-sm-12 col-xxl-12">
+                                <div class="gradient-style2 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-400 font-20">Total Withdrawal</div>
+                                            <div class="weight-300 font-20"><small class="currenct currency-usd">USD</small>0.00</div>
+                                        </div>
+                                        <div class="widget-icon">
+                                            <div class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-xxl-12">
+                                <div class="gradient-style3 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-400 font-20"><a>Unpaid Withdrawal</a> </div>
+                                            <div class="weight-300 font-20">0.00<small>USD</small></div>
+                                        </div>
+                                        <div class="widget-icon">
+                                            <div class="icon"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       <div class="col-sm-12 col-xxl-12">
+                                <div class="gradient-style4 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="widget-data">
+                                            <div class="weight-400 font-20">Balance On-Hold</div>
+                                            <div class="weight-300 font-20">0.00<small>USD</small></div>
+                                        </div>
+                                        <div class="widget-icon">
+                                            <div class="icon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                                                                     
+                                                                </div>
+                                                            </div><!-- .col -->
+                                                     
+                                                    </div>
+                                                  <!-- .nk-order-ovwg -->
+
+                                                    </div><!-- .card-inner -->
+                                                    
+                                                     
+                                                </div><!-- .card-inner-group -->
+                                            </div><!-- .card -->
+                                        </div><!-- .col -->
+
+   <div class="col-lg-8">
+                                            <div class="card card-bordered card-full">
+                                                <div class="card-inner">
+                                                    <div class="card-title-group">
+                                                        <div class="card-title">
+                                                            <h6 class="title"><span class="me-2">Latest Transactions</span> <a href="./Transaction-Log.html" class="link d-none d-sm-inline color-white">See History</a></h6>
+                                                        </div>
+                                                        
+                                                        <div class="card-tools">
+                                                            <ul class="card-tools-nav"> 
+                                                                <li class="active"><a href="./Transaction-Log.html"><span>All</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .card-inner -->
+                                                <div class="card-inner p-0 border-top">
+                                                    <div class="nk-tb-list nk-tb-orders">
+                                                        <div class="nk-tb-item nk-tb-head">
+                                                           
+                                                            
+                                                            <div class="nk-tb-col"><span>Date</span></div>
+                                                            <div class="nk-tb-col"><span>Ref</span></div>
+                                                            <div class="nk-tb-col"><span>Details</span></div>
+                                                             
+                                                           
+                                                            <!---<div class="nk-tb-col text-end"><span>Amount</span></div>-->
+                                                        </div><!-- .nk-tb-item -->
+                                                                                                                                                                         
+                                                    </div>
+                                                                                                        <div class="alert alert-info" role="alert">
+                                                        <div class="alert-body d-flex align-items-center">
+                                                            <i data-feather="info" class="me-50"></i>
+                                                                <span class="text-center"> Data Not Found</span>
+                                                        </div>
+                                                    </div>
+                                                                                                    </div><!-- .card-inner -->
+                                                <div class="card-inner-sm border-top text-center d-sm-none">
+                                                    <a href="./Transaction-Log.html" class="btn btn-link btn-block">See History</a>
+                                                </div><!-- .card-inner -->
+                                            </div><!-- .card -->
+                                        </div><!-- .col -->
+                                        <div class="col-lg-4">
+                                            <div class="card card-bordered h-100">
+
+                                          
+                                                <div class="card-inner">
+                                                    <div class="card-title-group align-start mb-3">
+                                                        <div class="card-title">
+                                                            <h6 class="title">Orders Overview</h6>
+                                                            <p>In Monthly income and expenses overview for year  <a href="./Dashboardd.html" class="link link-sm">2023.</a></p>
+                                                        </div>
+                                                         
+                                                    </div><!-- .card-title-group -->
+                                                    <div class="nk-order-ovwg">
+                                                        <div class="row g-4 align-end">
+                                                            <div class="">
+                                                                <div class="nk-order-ovwg-ck"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                                                <canvas class="bar-chart chartjs-render-monitor" id="barChartMultiple" style="display: block; width: 272px; height: 180px;" width="272" height="180"></canvas>
+
+                                                                </div>
+                                                            </div><!-- .col -->
+                                              </div>  
+                                              </div>
+                                              </div>
+                                              </div>
+                                              </div>
+                                                            
+                                                            
+                                                 
+                                <!---        <div class="col-md-6 col-xxl-3">
+                                            <div class="card card-bordered h-100">
+                                                <div class="card-inner h-100 stretch flex-column">
+                                                    <div class="card-title-group">
+                                                        <div class="card-title card-title-sm">
+                                                            <h6 class="title">Login Sessions by Device & Browser</h6>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="device-status my-auto">
+                                                        <div class="device-status-ck">
+                                                            <canvas class="analytics-doughnut" id="deviceStatusData"></canvas>
+                                                        </div>
+                                                        <div class="device-status-group"> 
+                                                          
+                                                                                                                      <div class="device-status-data">
+                                                                <em data-color="#798bff" class="icon icon ni  ni-b-globe   "></em>
+                                                                <div class="title">Android</div>
+                                                                <div class="title"> 2 Attempts </div>
+                                                            </div>
+                                                                                                                      <div class="device-status-data">
+                                                                <em data-color="#798bff" class="icon icon ni  ni-b-globe   "></em>
+                                                                <div class="title">Windows 10</div>
+                                                                <div class="title"> 3 Attempts </div>
+                                                            </div>
+                                                           
+                                                        </div><!-- .device-status-group -->
+                                                    </div><!-- .device-status -->
+                                                </div>
+                                            </div><!-- .card -->
+                                        </div>
+                                     
+
+                                        
+              
+
+                                        
+                                    </div><!-- .row -->
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- content @e  -->
+            
+            <!-- wrap @e  -->
+        
+        <!-- main @e  -->
+    
+    <!-- app-root @e  -->
+    
+   
+    <script src="./Dashboardd_files/bundle.js.download"></script>
+    <script src="./Dashboardd_files/scripts.js.download"></script>
+    <script src="./Dashboardd_files/gd-default.js.download"></script>
+    
+    <script>
+"use strict";
+
+!function (NioApp, $) {
+  "use strict"; //////// for developer - barchart //////// 
+  // Avilable options to pass from outside 
+  // labels: array,
+  // stacked: false - boolean,
+  // legend: false - boolean,
+  // dataUnit: string, (Used in tooltip or other section for display) 
+  // datasets: [{label : string, color: string (color code with # or other format), data: array}]
+
+   
+  var barChartMultiple = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    dataUnit: 'USD',
+    datasets: [{
+      label: "Income",
+      color: "#b41953",
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }, {
+      label: "Expense",
+      color: "#ec614a",
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }]
+  };
+
+ 
+  function barChart(selector, set_data) {
+    var $selector = selector ? $(selector) : $('.bar-chart');
+    $selector.each(function () {
+      var $self = $(this),
+          _self_id = $self.attr('id'),
+          _get_data = typeof set_data === 'undefined' ? eval(_self_id) : set_data,
+          _d_legend = typeof _get_data.legend === 'undefined' ? false : _get_data.legend;
+
+      var selectCanvas = document.getElementById(_self_id).getContext("2d");
+      var chart_data = [];
+
+      for (var i = 0; i < _get_data.datasets.length; i++) {
+        chart_data.push({
+          label: _get_data.datasets[i].label,
+          data: _get_data.datasets[i].data,
+          // Styles
+          backgroundColor: _get_data.datasets[i].color,
+          borderWidth: 2,
+          borderColor: 'transparent',
+          hoverBorderColor: 'transparent',
+          borderSkipped: 'bottom',
+          barPercentage: .6,
+          categoryPercentage: .7
+        });
+      }
+
+
+
+      var chart = new Chart(selectCanvas, {
+        type: 'bar',
+        data: {
+          labels: _get_data.labels,
+          datasets: chart_data
+        },
+        options: {
+          legend: {
+            display: _get_data.legend ? _get_data.legend : false,
+            rtl: NioApp.State.isRTL,
+            labels: {
+              boxWidth: 30,
+              padding: 20,
+              fontColor: '#6783b8'
+            }
+          },
+          maintainAspectRatio: false,
+          tooltips: {
+            enabled: true,
+            rtl: NioApp.State.isRTL,
+            callbacks: {
+              title: function title(tooltipItem, data) {
+                return data.datasets[tooltipItem[0].datasetIndex].label;
+              },
+              label: function label(tooltipItem, data) {
+                return data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem['index']] + ' ' + _get_data.dataUnit;
+              }
+            },
+            backgroundColor: '#eff6ff',
+            titleFontSize: 13,
+            titleFontColor: '#6783b8',
+            titleMarginBottom: 6,
+            bodyFontColor: '#9eaecf',
+            bodyFontSize: 12,
+            bodySpacing: 4,
+            yPadding: 10,
+            xPadding: 10,
+            footerMarginTop: 0,
+            displayColors: false
+          },
+          scales: {
+            yAxes: [{
+              display: true,
+              stacked: _get_data.stacked ? _get_data.stacked : false,
+              position: NioApp.State.isRTL ? "right" : "left",
+              ticks: {
+                beginAtZero: true,
+                fontSize: 12,
+                fontColor: '#9eaecf'
+              },
+              gridLines: {
+                color: NioApp.hexRGB("#526484", .2),
+                tickMarkLength: 0,
+                zeroLineColor: NioApp.hexRGB("#526484", .2)
+              }
+            }],
+            xAxes: [{
+              display: true,
+              stacked: _get_data.stacked ? _get_data.stacked : false,
+              ticks: {
+                fontSize: 12,
+                fontColor: '#9eaecf',
+                source: 'auto',
+                reverse: NioApp.State.isRTL
+              },
+              gridLines: {
+                color: "transparent",
+                tickMarkLength: 10,
+                zeroLineColor: 'transparent'
+              }
+            }]
+          }
+        }
+      });
+    });
+  } // init bar chart
+
+  
+
+
+  barChart(); //////// for developer - linechart //////// 
+  // Avilable options to pass from outside 
+  // labels: array,
+  // legend: false - boolean,
+  // dataUnit: string, (Used in tooltip or other section for display) 
+  // datasets: [{label : string, color: string (color code with # or other format), data: array}]
+    
+}(NioApp, jQuery);
+</script>
+<script>
+"use strict";
+
+!function (NioApp, $) {
+  "use strict"; // Vector Map
+
+  function jqvmap_init() {
+    var elm = '.vector-map';
+
+    if ($(elm).exists() && typeof $.fn.vectorMap === 'function') {
+      $(elm).each(function () {
+        var $self = $(this),
+        _self_id = $self.attr('id'),
+        map_data = eval(_self_id);
+
+        $self.vectorMap({
+          map: map_data.map,
+          backgroundColor: 'transparent',
+          borderColor: '#dee6ed',
+          borderOpacity: 1,
+          borderWidth: 1,
+          color: '#ccd7e2',
+          enableZoom: false,
+          hoverColor: '#9cabff',
+          hoverOpacity: null,
+          normalizeFunction: 'linear',
+          scaleColors: ['#ccd7e2', '#798bff'],
+          selectedColor: '#6576ff',
+          showTooltip: true,
+          values: map_data.data,
+          onLabelShow: function onLabelShow(event, label, code) {
+            var mapData = JQVMap.maps,
+                what = Object.keys(mapData)[0],
+                name = mapData[what].paths[code]['name'];
+            label.html(name + ' - ' + (map_data.data[code] || 0));
+          }
+        });
+      });
+    }
+  };
+
+  NioApp.coms.docReady.push(jqvmap_init); // Charts 
+  var deviceStatusData = {
+    labels: ["Handheld Browser","Chrome"],
+    dataUnit: 'Login Sessions',
+    legend: false,
+    datasets: [{
+      borderColor: "#fff",
+      background: ["#9cabff", "#b8acff", "#7de1f8"],
+      data: [2,3]
+    }]
+  };
+   
+  function analyticsDoughnut(selector, set_data) {
+    var $selector = selector ? $(selector) : $('.analytics-doughnut');
+    $selector.each(function () {
+      var $self = $(this),
+          _self_id = $self.attr('id'),
+          _get_data = typeof set_data === 'undefined' ? eval(_self_id) : set_data;
+
+      var selectCanvas = document.getElementById(_self_id).getContext("2d");
+      var chart_data = [];
+
+      for (var i = 0; i < _get_data.datasets.length; i++) {
+        chart_data.push({
+          backgroundColor: _get_data.datasets[i].background,
+          borderWidth: 2,
+          borderColor: _get_data.datasets[i].borderColor,
+          hoverBorderColor: _get_data.datasets[i].borderColor,
+          data: _get_data.datasets[i].data
+        });
+      }
+
+      var chart = new Chart(selectCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: _get_data.labels,
+          datasets: chart_data
+        },
+        options: {
+          legend: {
+            display: _get_data.legend ? _get_data.legend : false,
+            rtl: NioApp.State.isRTL,
+            labels: {
+              boxWidth: 12,
+              padding: 20,
+              fontColor: '#6783b8'
+            }
+          },
+          rotation: -1.5,
+          cutoutPercentage: 70,
+          maintainAspectRatio: false,
+          tooltips: {
+            enabled: true,
+            rtl: NioApp.State.isRTL,
+            callbacks: {
+              title: function title(tooltipItem, data) {
+                return data['labels'][tooltipItem[0]['index']];
+              },
+              label: function label(tooltipItem, data) {
+                return data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem['index']] + ' ' + _get_data.dataUnit;
+              }
+            },
+            backgroundColor: '#fff',
+            borderColor: '#eff6ff',
+            borderWidth: 2,
+            titleFontSize: 13,
+            titleFontColor: '#6783b8',
+            titleMarginBottom: 6,
+            bodyFontColor: '#9eaecf',
+            bodyFontSize: 12,
+            bodySpacing: 4,
+            yPadding: 10,
+            xPadding: 10,
+            footerMarginTop: 0,
+            displayColors: false
+          }
+        }
+      });
+    });
+  } // init chart
+
+
+  NioApp.coms.docReady.push(function () {
+    analyticsDoughnut();
+  });
+   
+
+  function analyticsLineSmall(selector, set_data) {
+    var $selector = selector ? $(selector) : $('.analytics-line-small');
+    $selector.each(function () {
+      var $self = $(this),
+          _self_id = $self.attr('id'),
+          _get_data = typeof set_data === 'undefined' ? eval(_self_id) : set_data;
+
+      var selectCanvas = document.getElementById(_self_id).getContext("2d");
+      var chart_data = [];
+
+      for (var i = 0; i < _get_data.datasets.length; i++) {
+        chart_data.push({
+          label: _get_data.datasets[i].label,
+          tension: _get_data.lineTension,
+          backgroundColor: _get_data.datasets[i].background,
+          borderWidth: 2,
+          borderColor: _get_data.datasets[i].color,
+          pointBorderColor: 'transparent',
+          pointBackgroundColor: 'transparent',
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: _get_data.datasets[i].color,
+          pointBorderWidth: 2,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 2,
+          pointRadius: 4,
+          pointHitRadius: 4,
+          data: _get_data.datasets[i].data
+        });
+      }
+
+       
+    });
+  } // init chart
+ 
+
+  NioApp.coms.docReady.push(function () {
+    analyticsLineLarge();
+  });
+}(NioApp, jQuery);
+</script>
+ <script>
+ $(window).on("load",(function(){"use strict";var o,e,r,t,a,s,i,l,n,d,h,c="#f3f3f3",w="#EBEBEB",p="#b9b9c3",u=document.querySelector("#statistics-order-chart"),g=document.querySelector("#statistics-profit-chart"),b=document.querySelector("#earnings-chart"),y=document.querySelector("#revenue-report-chart"),m=document.querySelector("#budget-chart"),f=document.querySelector("#browser-state-chart-primary"),k=document.querySelector("#browser-state-chart-warning"),x=document.querySelector("#browser-state-chart-secondary"),C=document.querySelector("#browser-state-chart-info"),A=document.querySelector("#browser-state-chart-danger"),B=document.querySelector("#goal-overview-radial-bar-chart"),S="rtl"===$("html").attr("data-textdirection");setTimeout((function(){}),2e3),o={chart:{height:70,type:"bar",stacked:!0,toolbar:{show:!1}},grid:{show:!1,padding:{left:0,right:0,top:-15,bottom:-15}},plotOptions:{bar:{horizontal:!1,columnWidth:"20%",startingShape:"rounded",colors:{backgroundBarColors:[c,c,c,c,c],backgroundBarRadius:5}}},legend:{show:!1},dataLabels:{enabled:!1},colors:[window.colors.solid.primary],series:[{name:"2020",data:[0,0,0]}],xaxis:{labels:{show:!1},axisBorder:{show:!1},axisTicks:{show:!1}},yaxis:{show:!1},tooltip:{x:{show:!1}}},new ApexCharts(u,o).render(),e={chart:{height:70,type:"line",toolbar:{show:!1},zoom:{enabled:!1}},grid:{borderColor:w,strokeDashArray:5,xaxis:{lines:{show:!0}},yaxis:{lines:{show:!1}},padding:{top:-30,bottom:-10}},stroke:{width:3},colors:[window.colors.solid.danger],series:[{data:[0,0]}],markers:{size:2,colors:window.colors.solid.danger,strokeColors:window.colors.solid.danger,strokeWidth:2,strokeOpacity:1,strokeDashArray:0,fillOpacity:1,discrete:[{seriesIndex:0,dataPointIndex:5,fillColor:"#ffffff",strokeColor:window.colors.solid.info,size:5}],shape:"circle",radius:2,hover:{size:3}},xaxis:{labels:{show:0,style:{fontSize:"0px"}},axisBorder:{show:!1},axisTicks:{show:!1}},yaxis:{show:!1},tooltip:{x:{show:!1}}},new ApexCharts(g,e).render(),r={chart:{type:"donut",height:120,toolbar:{show:!1}},dataLabels:{enabled:!1},series:[53,16,31],legend:{show:!1},comparedResult:[2,-3,8],labels:["App","Service","Product"],stroke:{width:0},colors:["#28c76f66","#28c76f33",window.colors.solid.success],grid:{padding:{right:-20,bottom:-8,left:-20}},plotOptions:{pie:{startAngle:-10,donut:{labels:{show:!0,name:{offsetY:15},value:{offsetY:-15,formatter:function(o){return parseInt(o)+"%"}},total:{show:!0,offsetY:15,label:"App",formatter:function(o){return"53%"}}}}}},responsive:[{breakpoint:1325,options:{chart:{height:100}}},{breakpoint:1200,options:{chart:{height:120}}},{breakpoint:1045,options:{chart:{height:100}}},{breakpoint:992,options:{chart:{height:120}}}]},new ApexCharts(b,r).render(),t={chart:{height:230,stacked:!0,type:"bar",toolbar:{show:!1}},plotOptions:{bar:{columnWidth:"17%",endingShape:"rounded"},distributed:!0},colors:[window.colors.solid.primary,window.colors.solid.warning],series:[{name:"Target Savings",data:['0','0','0','0','0','0','0','0','0','0','0','0']},{name:"Recurrent Savings",data:['0','0','0','0','0','0','0','0','0','0','0','0']}],dataLabels:{enabled:!1},legend:{show:!1},grid:{padding:{top:-20,bottom:-10},yaxis:{lines:{show:!1}}},xaxis:{categories:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],labels:{style:{colors:p,fontSize:"0.86rem"}},axisTicks:{show:!1},axisBorder:{show:!1}},yaxis:{labels:{style:{colors:p,fontSize:"0.86rem"}}}},new ApexCharts(y,t).render(),a={chart:{height:80,toolbar:{show:!1},zoom:{enabled:!1},type:"line",sparkline:{enabled:!0}},stroke:{curve:"smooth",dashArray:[0,5],width:[2]},colors:[window.colors.solid.primary,"#dcdae3"],series:[{data:[61,48,69,52,60,40,79,60,59,43,62]},{data:[20,10,30,15,23,0,25,15,20,5,27]}],tooltip:{enabled:!1}},new ApexCharts(m,a).render(),s={chart:{height:30,width:30,type:"radialBar"},grid:{show:!1,padding:{left:-15,right:-15,top:-12,bottom:-15}},colors:[window.colors.solid.primary],series:[54.4],plotOptions:{radialBar:{hollow:{size:"22%"},track:{background:w},dataLabels:{showOn:"always",name:{show:!1},value:{show:!1}}}},stroke:{lineCap:"round"}},new ApexCharts(f,s).render(),i={chart:{height:30,width:30,type:"radialBar"},grid:{show:!1,padding:{left:-15,right:-15,top:-12,bottom:-15}},colors:[window.colors.solid.warning],series:[6.1],plotOptions:{radialBar:{hollow:{size:"22%"},track:{background:w},dataLabels:{showOn:"always",name:{show:!1},value:{show:!1}}}},stroke:{lineCap:"round"}},new ApexCharts(k,i).render(),l={chart:{height:30,width:30,type:"radialBar"},grid:{show:!1,padding:{left:-15,right:-15,top:-12,bottom:-15}},colors:[window.colors.solid.secondary],series:[14.6],plotOptions:{radialBar:{hollow:{size:"22%"},track:{background:w},dataLabels:{showOn:"always",name:{show:!1},value:{show:!1}}}},stroke:{lineCap:"round"}},new ApexCharts(x,l).render(),n={chart:{height:30,width:30,type:"radialBar"},grid:{show:!1,padding:{left:-15,right:-15,top:-12,bottom:-15}},colors:[window.colors.solid.info],series:[4.2],plotOptions:{radialBar:{hollow:{size:"22%"},track:{background:w},dataLabels:{showOn:"always",name:{show:!1},value:{show:!1}}}},stroke:{lineCap:"round"}},new ApexCharts(C,n).render(),d={chart:{height:30,width:30,type:"radialBar"},grid:{show:!1,padding:{left:-15,right:-15,top:-12,bottom:-15}},colors:[window.colors.solid.danger],series:[8.4],plotOptions:{radialBar:{hollow:{size:"22%"},track:{background:w},dataLabels:{showOn:"always",name:{show:!1},value:{show:!1}}}},stroke:{lineCap:"round"}},new ApexCharts(A,d).render(),h={chart:{height:245,type:"radialBar",sparkline:{enabled:!0},dropShadow:{enabled:!0,blur:3,left:1,top:1,opacity:.1}},colors:["#51e5a8"],plotOptions:{radialBar:{offsetY:-10,startAngle:-150,endAngle:150,hollow:{size:"77%"},track:{background:"#ebe9f1",strokeWidth:"50%"},dataLabels:{name:{show:!1},value:{color:"#5e5873",fontSize:"2.86rem",fontWeight:"600"}}}},fill:{type:"gradient",gradient:{shade:"dark",type:"horizontal",shadeIntensity:.5,gradientToColors:[window.colors.solid.success],inverseColors:!0,opacityFrom:1,opacityTo:1,stops:[0,100]}},series:[83],stroke:{lineCap:"round"},grid:{padding:{bottom:30}}},new ApexCharts(B,h).render()}));
+</script>
+
+    <script>
+                        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                        (function(){
+                        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                        s1.async=true;
+                        s1.src="https://embed.tawk.to/6336240937898912e96c1117/1ge5npi4u";
+                        s1.charset="UTF-8";
+                        s1.setAttribute("crossorigin","*");
+                        s0.parentNode.insertBefore(s1,s0);
+                        })();
+                    </script>
+    <link rel="stylesheet" href="./Dashboardd_files/iziToast.min.css">
+<script src="./Dashboardd_files/iziToast.min.js.download"></script>
+    
+    <script>
+    "use strict";
+    (function (NioApp, $) {
+    'use strict'; // Basic Sweet Alerts
+    Swal.fire("success", "Login successfully", "success");
+    })(NioApp, jQuery);
+    </script>
+
+           <script>
+      //  toastr.success("Login successfully","👋 Hello!!!");
+
+         //  "use strict";
+         //  iziToast.success({message:"Login successfully", position: "topRight"});
+        </script>
+    
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+    
+   <!-- Smartsupp Live Chat script --> <script type="text/javascript"> var _smartsupp = _smartsupp || {}; _smartsupp.key = '2f028f0414eb0a3f23246c71d545b4df7806f9fb'; window.smartsupp||(function(d) {   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];   s=d.getElementsByTagName('script')[0];c=d.createElement('script');   c.type='text/javascript';c.charset='utf-8';c.async=true;   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s); })(document); </script><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="./Dashboardd_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Original text</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Contribute a better translation</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
+  
+
+
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div id="chat-application" style="display: block; z-index: 2147483647; position: fixed; overflow: hidden; bottom: 24px; left: initial; right: 11px; max-height: 65px; max-width: 113px; height: 65px; width: 113px; background: transparent;"><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="width: 100%; height: 100%; border: none; position: absolute; left: 0px; z-index: 10000001;" src="./Dashboardd_files/saved_resource(3).html"></iframe></div><script async="" charset="UTF-8" src="./Dashboardd_files/en.js.download"></script></body></html>
